@@ -1,0 +1,12 @@
+$colorAzul: color blue;
+
+@mixin dia($nombre){
+    @if $nombre == lunes{
+        color: orangered;
+    } @else if $nombre == viernes{
+        color: hsl(187, 100%, 50%);
+    } @else {
+        color: black;
+    }
+    font-size: 1rem;
+}

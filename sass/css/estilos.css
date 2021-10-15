@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+/* resetear margenes */
+/* line 5, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 11, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+  .container {
+    width: 80%;
+    height: 80%;
+  }
+  /* line 13, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+  .header {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 17, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+  .container {
+    width: 90%;
+    height: 90%;
+  }
+  /* line 19, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+  .header {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+/* line 23, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin: 2rem 4rem;
+  font-size: 1.5rem;
+}
+
+/* custom de h, textos y p */
+/* line 34, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.parrafos1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 45px;
+}
+
+/* line 39, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.parrafos1--color {
+  color: violet;
+}
+
+/* line 42, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.parrafos1:hover {
+  transition: 3s;
+  font-size: 4rem;
+}
+
+/* line 46, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+a:hover {
+  font-size: 28px;
+  background-color: white;
+}
+
+/* line 51, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.parrafos2 {
+  color: brown;
+}
+
+/* line 54, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.parrafos2--italic {
+  font-style: italic;
+}
+
+/* line 58, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.parrafos3 {
+  text-decoration: underline;
+}
+
+/* line 61, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.parrafos3--oblique {
+  font-style: oblique;
+}
+
+/* line 64, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.textoCentrado {
+  text-align: justify;
+}
+
+/* line 67, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.tituloSecundario {
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  padding-top: 5rem;
+  line-height: 1.3;
+}
+
+/* line 75, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.tituloSecundario__background {
+  background-color: teal;
+  text-align: center;
+}
+
+/* line 80, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 84, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+form {
+  text-align: center;
+}
+
+/* line 88, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.customBorder {
+  border-top: solid 5px red;
+  border-right: solid 10px yellow;
+  border-bottom: solid 7px green;
+  border-left: solid 12px yellow;
+}
+
+/* fondos */
+/* line 96, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.fondoIndex {
+  background-image: url("../../img/Fondoindex.jpg");
+}
+
+/* line 100, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.fondoContacto {
+  background-image: url("../../img/Fondocontacto.jpg");
+}
+
+/* line 104, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_body.scss */
+.fondoInfo {
+  background-image: url("../../img/Fondoinfo.jpg");
+}
+
+/* nav */
+/* line 3, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_nav.scss */
+.linearNav {
+  background-image: linear-gradient(to left, red, yellow);
+}
+
+/* line 6, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_nav.scss */
+.ulNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: baseline;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+/* line 16, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_nav.scss */
+.liNav {
+  padding: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* line 21, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_nav.scss */
+.liNav__link {
+  color: cornsilk;
+}
+
+/* botones */
+/* line 27, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_nav.scss */
+button {
+  margin: 20px;
+}
+
+/* line 30, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_nav.scss */
+.boton1 {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* line 48, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_nav.scss */
+.boton1Estilo {
+  background: #060e83;
+  background: linear-gradient(0deg, #060e83 0%, #0c19b4 100%);
+  border: none;
+}
+
+/* line 53, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_nav.scss */
+.boton1Estilo:Hover {
+  background: #0003ff;
+  background: linear-gradient(0deg, #0003ff 0%, #027efb 100%);
+}
+
+/* line 1, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_footer.scss */
+.radialFooter {
+  background-image: radial-gradient(red, yellow);
+}
+
+/* line 5, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_footer.scss */
+.ulFooter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: baseline;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+/* line 16, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_footer.scss */
+.liFooter {
+  padding: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* line 20, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_footer.scss */
+.liFooter__link {
+  color: #2e2e2e;
+}
+
+/* tablas y elementos de tablas */
+/* line 3, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+table {
+  border-style: solid;
+  background-color: burlywood;
+  border-width: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: baseline;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+/* line 16, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+ul li {
+  color: white;
+  text-decoration: white;
+}
+
+/* line 20, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+th {
+  font-size: 25px;
+  color: #0e2964;
+  font-weight: bold;
+}
+
+/* line 25, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+tbody {
+  font-size: 20px;
+  color: color blue;
+  text-align: center;
+}
+
+/* line 31, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+.lunes {
+  color: orangered;
+  font-size: 1rem;
+}
+
+/* line 34, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+.viernes {
+  color: #00e1ff;
+  font-size: 1rem;
+}
+
+/* line 37, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+.sabado {
+  color: black;
+  font-size: 1rem;
+}
+
+/* line 41, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-items: center;
+}
+
+/* line 49, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+.grid2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 56, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+.imgCarousel {
+  width: 100%;
+  height: 800px;
+}
+
+/* line 59, ../../Coder Desarrollo Web/Clase 2/web/sass/scss/_section.scss */
+.imgCarousel .imgCarousel--light {
+  filter: brightness(3.01);
+}
+
+/*# sourceMappingURL=estilos.css.map */

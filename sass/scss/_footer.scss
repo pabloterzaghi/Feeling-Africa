@@ -1,0 +1,23 @@
+.radialFooter{ 
+    background-image: radial-gradient( red , yellow);
+}
+
+.ulFooter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    list-style-type: none;
+    margin-bottom: 30px;
+    }
+
+.liFooter{
+    padding: 30px;
+    font-size: 28px;
+    font-weight: bold;
+  &__link{
+    color: #2e2e2e;
+  }
+}

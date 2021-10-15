@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* resetear margenes */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .container{ width: 80%; height: 80%; 
+    }
+    .header{ width: 80%; height: 80%; 
+    }
+}  
+@media only screen and (min-width: 768px){
+    .container{ width: 90%; height: 90%; 
+    }
+    .header{ width: 90%; height: 90%;
+    }
+}
+
+body{ 
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 2rem 4rem;
+    font-size: 1.5rem;
+}
+
+/* custom de h, textos y p */
+.parrafos1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size:  45px;
+}
+    .parrafos1--color{
+        color: violet;
+    }
+    .parrafos1:hover{
+        transition:3s;
+        font-size: 4rem;
+        }
+            a:hover{
+                font-size: 28px;
+                background-color:white;
+            }
+
+.parrafos2{
+    color: brown;
+}
+    .parrafos2--italic{
+        font-style: italic;  
+    }
+
+.parrafos3{
+    text-decoration: underline;
+    }
+    .parrafos3--oblique{
+        font-style: oblique; 
+    }
+    .textoCentrado{
+        text-align: justify;
+    }
+    .tituloSecundario{
+        color: white;
+        text-align: left;
+        font-size: 30px;
+        padding-top: 5rem;
+        line-height: 1.3;  
+    }
+
+    .tituloSecundario__background{
+        background-color: teal;
+        text-align: center;
+    }
+
+.underline{
+    text-decoration: underline;
+}
+
+form{
+    text-align: center;
+}
+
+.customBorder{
+    border-top:solid 5px red;	
+    border-right:solid 10px yellow;
+    border-bottom:solid 7px green;
+    border-left:solid 12px yellow;
+}
+
+/* fondos */
+.fondoIndex{
+    background-image: url("../../img/Fondoindex.jpg");
+}
+
+.fondoContacto{
+    background-image: url("../../img/Fondocontacto.jpg");   
+}
+
+.fondoInfo{
+    background-image: url("../../img/Fondoinfo.jpg");
+}

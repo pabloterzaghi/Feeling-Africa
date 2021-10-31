@@ -1,102 +1,381 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Feeling Africa - info</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="./sass/css/estilos.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    </head>
+<head>
+    <title>Feeling Africa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./sass/css/custom.css">
+    <link rel="stylesheet" href="./sass/css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+</head>
 
-    <body class="fondoInfo">
-        
-        <!--header-->
-        <div"> 
-            <p class="parrafos1 underline" >Feeling Africa/Info</p>
+<body>
+
+    <main role="main">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #343a40c2;">
+            <div class="container">
+                <img src="./img/LogoSF.svg" alt="Feeling Africa" class="logo">
+                <a class="navbar-brand" href="#">Feeling Africa</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="info.html">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+        <!-- carousel -->
+        <div id="topCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#topCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#topCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#topCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="./img/topCarousel/top1-1920x850.jpg" media="(min-width: 1400px)">
+                        <source srcset="./img/topCarousel/top1-1400x850.jpg" media="(min-width: 768px)">
+                        <source srcset="./img/topCarousel/top1-800x850.jpg" media="(min-width: 576px)">
+                        <img srcset="./img/topCarousel/top1-600x850.jpg" alt="logo" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Example headline.</h1>
+                            <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <picture>
+                        <source srcset="./img/topCarousel/top2-1920x850.jpg" media="(min-width: 1400px)">
+                        <source srcset="./img/topCarousel/top2-1400x850.jpg" media="(min-width: 768px)">
+                        <source srcset="./img/topCarousel/top2-800x850.jpg" media="(min-width: 576px)">
+                        <img srcset="./img/topCarousel/top2-600x850.jpg" alt="logo" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Another example headline.</h1>
+                            <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source srcset="./img/topCarousel/top3-1920x850.jpg" media="(min-width: 1400px)">
+                        <source srcset="./img/topCarousel/top3-1400x850.jpg" media="(min-width: 768px)">
+                        <source srcset="./img/topCarousel/top3-800x850.jpg" media="(min-width: 576px)">
+                        <img srcset="./img/topCarousel/top3-600x850.jpg" alt="logo" class="d-block img-fluid">
+                    </picture>
+
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>One more for good measure.</h1>
+                            <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#topCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#topCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
-       
-        <!--botones-->
-        <div">
-            <button class="boton1 boton1Estilo">Suscribite!</button>
-            <button class="boton1 boton1Estilo">Ingresar</button>
-        </div>
-        
-        <!--nav-->
-        <div class="linearNav customBorder">
-            <ul class="ulNav"> 
-                <li class="liNav"><a href="./index.html">Home</a></li>
-                <li class="liNav"><a href="./info.html">Info</a></li>
-                <li class="liNav"><a href="./contact.html">Contacto</a></li>
-            </ul>
-        </div>
-        
-        <!--aside-->
-        <div">
-            <p>Publicidad</p>
+        <!-- end carousel -->
+
+        <!-- content -->
+        <div class="container">
+            <!-- content row -->
+            <div class="row featurette">
+                <div class="col-md-12">
+                    <h2 class="featurette-heading" style="margin-top: 1rem; margin-bottom: 1rem; text-align:center; color: #c69214;">SUDÁFRICA</h2>
+                    <p class="lead">
+                        Si hay un país en el mundo que se caracteriza por su fascinante diversidad cultural y geográfica, ese es Sudáfrica.
+                    Conocida como la Nación del Arcoíris, Sudáfrica tiene una pureza única. Su naturaleza y vida salvaje hacen que sea un
+                    destino que atrae por muchas razones a cualquier apasionado de los viajes.
+                    </p>
+                    <p class="lead">
+                        <strong>Donde se encuentra en el mapa –</strong> Como su nombre bien indica, se encuentra totalmente al sur de África. Desde su frontera
+                        norte, limita de oeste a este con los siguientes países: Namibia, Botsuana, Zimbabue y Mozambique. Los océanos que
+                        rodean al país son el Océano Atlántico y el Océano Índico. El punto más al sur de África se llama Cape Agulhas (Cabo de
+                        las Agujas), donde además coinciden ambos océanos.
+                    </p>
+                    <p class="lead">
+                        <strong>Capital y ciudades principales –</strong> Es muy interesante, ya que Sudáfrica tiene 3 capitales. Pretoria es la capital
+                        administrativa de Sudáfrica, Ciudad del Cabo es la capital legislativa y Bloemfontein es la capital judicial. En cuanto
+                        a sus ciudades principales, ellas son: Johannesburgo (5 905 552 habitantes), Ciudad del Cabo (4 713 576 habitantes),
+                        Pretoria (3 862 352 habitantes), Durban (3 793 580 habitantes), Puerto Elizabeth (967 677 habitantes), Bloemfontein (463
+                        064 habitantes), Nelspruit (110 159 habitantes) y Kimberley (225 160 habitantes).
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Destinos de turismo principales –</strong> Sudáfrica es un país que destaca por su amplia diversidad de ecosistemas. El destino
+                        principal por excelencia de safari en Sudáfrica es el Parque Kruger, donde se pueden disfrutar de las mejores
+                        experiencias de safari de todo África. Otro destino importantísimo de Sudáfrica es Ciudad del Cabo (Cape Town), la cual
+                        es una de las ciudades más interesantes y atractivas del mundo. Ciudad del Cabo destaca por su mágico multiculturalismo,
+                        la Montaña de la Mesa (Table Mountain, una de las siete maravillas del mucho), el Cabo de Buena Esperanza y los Viñedos
+                        del Cabo. Una de las joyas ocultas de Sudáfrica es Grootbos, una reserva natural privada que National Geographic
+                        considera como una de las 25 mejores del mundo. En Grootbos, uno puede alojarse en uno de los reinos florales más
+                        espectaculares de todo África y tener la oportunidad de ver un auténtico safari marino, con ballenas, pingüinos y hasta
+                        incluso tiburones blancos.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Qué idiomas se hablan en Sudáfrica –</strong> Sudáfrica, la nación del arcoíris, se caracteriza por tener 11 idiomas oficiales.
+                        Esos idiomas son: Zulú, Xhosa, Afrikaans, Pedi, Inglés, Tswana, Sotho, Tsonga, Swati, Venda y Ndebele. Hay que tener en
+                        cuenta que toda la gente en Sudáfrica habla inglés y es el idioma universal del país. Algo curioso es que el himno de
+                        Sudáfrica está formado por los idiomas más hablados, los cuales son Inglés, Afrikáans Xhosa, Zulú y Sesotho.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Su población -</strong> Sudáfrica, con una población de 57 664 993 personas, es el sexto país más poblado de Africa por detrás de
+                        Nigeria, Etiopia, Egipto, el Congo y Tanzania.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>El clima de Sudáfrica –</strong> Su clima es moderado. No tiene temperaturas muy frías ni muy cálidas. Sus estaciones, funcionan
+                        a la inversa que en el hemisferio norte. Uno de los aspectos más atractivos de Sudáfrica es que es un destino al cual se
+                        puede viajar cualquier mes del año y siempre ofrece opciones y alternativas muy buenas para disfrutar de un gran viaje.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Qué tamaño tiene la superficie de Sudáfrica –</strong> Tiene una superficie de 1.219.090 Km2, por lo que puede considerarse un
+                        país grande. A modo de referencia, tiene la misma superficie que Francia y España juntas.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Cómo es su gente –</strong> Sudáfrica es una nación muy multicultural. La distribución de razas en porcentajes aproximada es de
+                        78% de raza negra, 10% son de raza blanca (descendientes de los holandeses y británicos), 9% de raza mestiza y un 3%
+                        asiáticos e indios. La gente sudafricana se define por ser una gente muy amable, atenta con los demás y muy sociable. Es
+                        una nación de gente que sonríe y que siempre reciben con los brazos abiertos a cualquier persona de fuera o turista. Es
+                        ese cariño con el que reciben a la gente, que hace que sea un destino de viaje top, el cual destaca por su sólida
+                        industria del turismo.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Qué moneda hay en Sudáfrica –</strong> La moneda oficial de Sudáfrica es el Rand. Su código se escribe como ZAR. Es la moneda
+                        oficial de Sudáfrica desde el año 1961 y tiene un cambio de moneda que hace que sea muy favorable visitar el país desde
+                        España (euros) o desde Sudamérica (dólares americanos). El valor aproximado actual del Rand en comparación al Euro es de
+                        19 rands 1 Euro y al Dólar americano es de 16 rands 1 US Dólar.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Gastronomía en Sudáfrica –</strong> Su gastronomía se caracteriza por ser una fusión de culturas que hacen que la mezcla sea
+                        completamente especial. La comida principal y por excelencia de Sudáfrica es la Braai, lo cual podría definirse como una
+                        barbacoa o un asado. Es una costumbre asociada a reuniones sociales entre familiares y amigos. Es una forma
+                        característica de los sudafricanos de crear comunidad y de reunirse. La carne es la parte estrella, pero, además, se
+                        suele acompañar con una ensalada de patata y unos sándwiches tostados en el fuego con cebolla, queso y rodajas de
+                        tomate. Son unos grandes amantes del fuego y de disfrutar del romanticismo que conlleva cocinar para familiares y amigos
+                        en unas buenas brasas.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Nelson Mandela –</strong> El papel que jugó Nelson Mandela en Sudáfrica fue fundamental. Fue presidente del país desde 1994 hasta
+                        1999 y transformó a Sudáfrica completamente. Hizo que Sudáfrica se convirtiera en un país multicultural, lleno de color.
+                        Fue el padre de la Nación del Arcoíris. Por todos sus logros y dedicación a la unión pacífica del país y aceptación de
+                        todas las razas, se convirtió en un ejemplo para todo el mundo. Recibió el Premio Novel de la Paz en 1993.
+                    </p>
+                    
+                    <p class="lead">
+                        <strong>Cómo es la bandera de Sudáfrica –</strong> La bandera de Sudáfrica, establecida en el año 1994, año de las primeras elecciones
+                        completamente democráticas de Sudáfrica y fin del apartheid, tiene 6 colores. Todos esos colores son muy simbólicos y
+                        tienen un significado muy especial. El azul representa el cielo. El rojo la sangre. El amarillo los recursos naturales
+                        del país como el oro. El verde representa la tierra. Y el blanco y el negro representan los colores de las principales
+                        razas del país. El diseño de Y que tiene simboliza la unión en una sola nación.
+                    </p>
+                </div>
+            </div>
+            <!-- end content row -->
+            <!-- divider -->
+            <hr class="featurette-divider" style="margin: 5rem 0;">
         </div>
 
-        <!--section-->
-        <div class="grid párrafos textoCentrado"> 
-            <article> 
-                <p class="tituloSecundario underline" >Informacion mas detallada sobre el Articulo 1</p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                <img class="" src="img/ImagenInfo1.jpg" alt="" width="250" height="250">
-            </article>
-            <article>
-                <p class="tituloSecundario underline">Informacion mas detallada sobre el Articulo 2</p>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
-                    'Content here, content here', making it look like readable English. Many desktop publishing packages and web page
-                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
-                    still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-                </p>
-                <img src="" alt="">
-            </article>
-            <article> 
-                <p class="tituloSecundario underline">Informacion mas detallada sobre el Articulo 3</p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                    recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </article>
-            <article>
-                <p class="tituloSecundario underline">Informacion mas detallada sobre el Articulo 4</p>
-                <p>
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
-                    'Content here, content here', making it look like readable English. Many desktop publishing packages and web page
-                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
-                    still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-                </p>
-                <img src="" alt="">
-            </article>
+        <!-- carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="container">
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This card has even longer content than the first to show that equal
+                                        height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This card has even longer content than the first to show that equal
+                                        height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item custom-carousel-item">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./img/Imagen2index.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional
+                                        content. This card has even longer content than the first to show that equal
+                                        height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
         </div>
+        <!-- end carousel -->
 
-        <!--footer-->
-        <div class="radialFooter customBorder">
-            <ul class="ulFooter"> 
-                <li class="liFooter"><a href="https://twitter.com" target="_blank">TW</a></li>
-                <li class="liFooter"><a href="https://www.instagram.com" target="_blank">IG</a></li>
-                <li class="liFooter"><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-            </ul>
-        </div> 
+        <!-- social -->
+        <ul class="nav d-flex justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"
+                        style="font-size: 2rem;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"
+                        style="font-size: 2rem;"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/home" target="_blank"><i class="bi bi-twitter"
+                        style="font-size: 2rem;"></i></a>
+            </li>
+        </ul>
+        <!-- end social -->
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </body>
+        <footer class="container bck-footer">
+            <p class="float-right"><a href="info.html">Back to top</a></p>
+            <p>©2021 Pablo Terzaghi · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
 
 </html>

@@ -42,6 +42,10 @@
   background-color: hsl(227, 8%, 77%);
 }
 
+.bck-navbar{
+  background-color: #343a40c2;
+}
+
 .backgroundGray{
   background-color: lightgray;
 }
@@ -69,4 +73,14 @@
 
 .textoSubrayado{
   text-decoration: underline;
+}
+
+.divisor{
+margin: 5rem 0;
+}
+
+.icon{
+  font-size: 2rem;
+  margin: 0rem;
+  padding: 0rem;
 }

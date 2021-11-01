@@ -39,10 +39,34 @@
 }
 
 .bck-footer{
-  background-color: #909298;
+  background-color: hsl(227, 8%, 77%);
+}
+
+.backgroundGray{
+  background-color: lightgray;
+}
+
+.backgroundColor{
+  background-color: rgb(255, 248, 248);
 }
 
 .tamañoImg{
   width: 750px;
   height: 600px;
+}
+
+.tituloInfo{
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+  text-align: center; 
+  color: #c69214;
+}
+
+.textoCentrado{
+  text-align: center;
+  box-align: center;
+}
+
+.textoSubrayado{
+  text-decoration: underline;
 }

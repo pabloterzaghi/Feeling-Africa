@@ -1,7 +1,3 @@
-.radialFooter{ 
-    background-image: radial-gradient( red , yellow);
-}
-
 .ulFooter{
     display: flex;
     flex-direction: row;
@@ -12,14 +8,13 @@
     list-style-type: none;
     margin-bottom: 30px;
     }
-
-.liFooter{
-    padding: 30px;
-    font-size: 28px;
-    font-weight: bold;
-  &__link{
-    color: #2e2e2e;
-  }
+      .liFooter{
+        padding: 30px;
+        font-size: 28px;
+        font-weight: bold;
+           &__link{
+            color: #2e2e2e;
+          }
 }
 
 .bck-footer{

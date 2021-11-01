@@ -13,20 +13,6 @@ table{
     list-style-type: none;
     margin-bottom: 30px;
 }
-    ul li{
-        color: white;
-        text-decoration: white;
-    }
-    th{
-        font-size: 25px;
-        color: rgb(14, 41, 100);
-        font-weight: bold;
-    }
-    tbody{
-        font-size: 20px;
-        color: $colorAzul;
-        text-align: center;
-    }
 
     .lunes{
         @include dia(lunes);
@@ -46,12 +32,13 @@ table{
     grid-row-gap: 15px;
     justify-items: center;
 }
-    .grid2{
+
+.flex{
     display: flex;  
 	justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    }
+}
 
 .imgCarousel{ 
     width: 100%;

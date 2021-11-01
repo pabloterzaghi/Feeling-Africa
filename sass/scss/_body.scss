@@ -71,11 +71,10 @@ body{
         padding-top: 5rem;
         line-height: 1.3;  
     }
-
-    .tituloSecundario__background{
+        .tituloSecundario__background{
         background-color: teal;
         text-align: center;
-    }
+        }
 
 .underline{
     text-decoration: underline;
@@ -90,17 +89,4 @@ form{
     border-right:solid 10px yellow;
     border-bottom:solid 7px green;
     border-left:solid 12px yellow;
-}
-
-/* fondos */
-.fondoIndex{
-    background-image: url("../../img/Fondoindex.jpg");
-}
-
-.fondoContacto{
-    background-image: url("../../img/Fondocontacto.jpg");   
-}
-
-.fondoInfo{
-    background-image: url("../../img/Fondoinfo.jpg");
 }

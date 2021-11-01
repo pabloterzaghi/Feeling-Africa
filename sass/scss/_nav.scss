@@ -3,24 +3,24 @@
 .linearNav{ 
     background-image: linear-gradient(to left, red , yellow);
     }
-    .ulNav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: baseline;
-    list-style-type: none;
-    margin-bottom: 30px;
-    }
-    .liNav{
-    padding: 30px;
-    font-size: 28px;
-    font-weight: bold;
-    }
-    .liNav__link{
-    color: cornsilk;
-    }
+        .ulNav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: baseline;
+        list-style-type: none;
+        margin-bottom: 30px;
+        }
+        .liNav{
+        padding: 30px;
+        font-size: 28px;
+        font-weight: bold;
+        }
+            .liNav__link{
+            color: cornsilk;
+            }
 
 /* botones */
 

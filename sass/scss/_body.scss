@@ -7,19 +7,6 @@
     padding: 0;
 }
 
-@media only screen and (max-width: 600px){
-    .container{ width: 80%; height: 80%; 
-    }
-    .header{ width: 80%; height: 80%; 
-    }
-}  
-@media only screen and (min-width: 768px){
-    .container{ width: 90%; height: 90%; 
-    }
-    .header{ width: 90%; height: 90%;
-    }
-}
-
 body{ 
     font-family: 'Roboto', sans-serif;
     background-color: white;
@@ -71,7 +58,7 @@ body{
         padding-top: 5rem;
         line-height: 1.3;  
     }
-        .tituloSecundario__background{
+        &__background{
         background-color: teal;
         text-align: center;
         }
@@ -84,9 +71,15 @@ form{
     text-align: center;
 }
 
-.customBorder{
-    border-top:solid 5px red;	
-    border-right:solid 10px yellow;
-    border-bottom:solid 7px green;
-    border-left:solid 12px yellow;
+@media only screen and (max-width: 600px){
+    .container{ width: 80%; height: 80%; 
+    }
+    .header{ width: 80%; height: 80%; 
+    }
+}  
+@media only screen and (min-width: 768px){
+    .container{ width: 90%; height: 90%; 
+    }
+    .header{ width: 90%; height: 90%;
+    }
 }
